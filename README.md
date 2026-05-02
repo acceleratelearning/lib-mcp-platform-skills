@@ -38,7 +38,11 @@ skills-repo/
     │       └── checklist.md
     ├── scaffold-route/
     │   └── SKILL.md
-    └── discovery-call/
+    ├── discovery-call/
+    │   └── SKILL.md
+    ├── triage-bug/
+    │   └── SKILL.md
+    └── write-rfc/
         └── SKILL.md
 ```
 
