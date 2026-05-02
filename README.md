@@ -6,7 +6,7 @@ A starter template for building your own [Agent Skills](https://agentskills.io/)
 
 ## What is this?
 
-A **skill** is a directory with a `SKILL.md` file: a markdown playbook that teaches an agent how to do one task. Drop the right folder into this repo and the agent knows how to ship a changelog, review a PR, run a discovery call, or whatever you need.
+A **skill** is a directory with a `SKILL.md` file: a markdown playbook that teaches an agent how to do one task. Drop the right folder into this repo and the agent knows how to review a PR, triage a bug, query your database, humanize your writing, or whatever you need.
 
 Drop a folder with a `SKILL.md` into this repo and it becomes available to any MCP-aware agent the moment you point it at:
 
@@ -30,19 +30,19 @@ skills-repo/
 ├── README.md
 ├── LICENSE
 └── skills/
-    ├── ship-changelog/
-    │   └── SKILL.md          ← required: frontmatter + body
     ├── review-pr/
-    │   ├── SKILL.md
+    │   ├── SKILL.md          ← required: frontmatter + body
     │   └── references/       ← optional: deep-dive content
     │       └── checklist.md
-    ├── scaffold-route/
-    │   └── SKILL.md
-    ├── discovery-call/
-    │   └── SKILL.md
     ├── triage-bug/
     │   └── SKILL.md
-    └── write-rfc/
+    ├── write-like-a-human/
+    │   └── SKILL.md
+    ├── ask-database/
+    │   └── SKILL.md
+    ├── suggesting-skills/
+    │   └── SKILL.md
+    └── grill-me/
         └── SKILL.md
 ```
 
@@ -54,20 +54,20 @@ Per the [Agent Skills specification](https://agentskills.io/specification#skillm
 
 ```markdown
 ---
-name: ship-changelog
-description: Turn a week of git commits into a customer-ready release note. Use when the user asks for "changelog" or "release notes".
+name: triage-bug
+description: Take a raw bug report and turn it into a clean, prioritized ticket with a title, repro steps, and severity. Use when the user says "triage this", pastes a support escalation, or asks "what's this bug".
 license: MIT
 ---
 
-# Ship Changelog
+# Triage Bug
 
-When the user asks for a changelog:
+Convert a noisy bug report into a ticket someone can act on.
 
-1. Run `git log --since='last monday'`.
-2. Group commits by area.
-3. Rewrite each one as a user-visible bullet.
-4. Drop refactors and dependency bumps.
-5. Output as Markdown.
+1. Restate the symptom in one sentence as a user would say it.
+2. Pull out numbered repro steps.
+3. Note expected vs actual.
+4. Assign a severity (S1–S4) and an area.
+5. Output the ticket in Markdown.
 ```
 
 Required frontmatter:
@@ -116,7 +116,7 @@ When clients adopt SEP-2640 natively, the per-skill tools become redundant — b
 You can validate any skill against the spec with [`skills-ref`](https://github.com/agentskills/agentskills/tree/main/skills-ref):
 
 ```bash
-skills-ref validate ./skills/ship-changelog
+skills-ref validate ./skills/triage-bug
 ```
 
 ## Resources
