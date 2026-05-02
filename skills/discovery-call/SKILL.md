@@ -1,6 +1,7 @@
 ---
 name: discovery-call
 description: Run a 25-minute customer discovery interview without leading questions, then synthesize the takeaways. Use when the user asks for "interview script", "user research", "discovery questions", or "talked to a user — help me synthesize".
+license: MIT
 ---
 
 # Discovery Call

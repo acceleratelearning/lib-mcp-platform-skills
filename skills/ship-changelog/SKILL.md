@@ -1,6 +1,7 @@
 ---
 name: ship-changelog
 description: Turn a week of git commits into a customer-ready release note. Use when the user asks for "changelog", "release notes", or "what shipped this week".
+license: MIT
 ---
 
 # Ship Changelog

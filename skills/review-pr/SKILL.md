@@ -1,6 +1,7 @@
 ---
 name: review-pr
 description: Read a pull request diff like a senior engineer. Flag risk, suggest tests, point out missing edge cases. Use when the user asks to "review PR", "look at this diff", or pastes a GitHub PR URL.
+license: MIT
 ---
 
 # Review PR

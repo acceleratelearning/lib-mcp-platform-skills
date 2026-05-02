@@ -1,6 +1,7 @@
 ---
 name: scaffold-route
 description: Generate a typesafe Next.js App Router route with handler, Zod schema, and a basic test. Use when the user asks to "add an endpoint", "scaffold a route", or "create an API for X".
+license: MIT
 ---
 
 # Scaffold Route
