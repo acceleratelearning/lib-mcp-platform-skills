@@ -1,3 +1,5 @@
+<a href="https://skillsovermcp.com"><img src="https://skillsovermcp.com/repo-header.png" alt="Skills Over MCP — turn any GitHub repo of SKILL.md files into a live MCP server" /></a>
+
 # skills-repo
 
 A starter template for building your own [Agent Skills](https://agentskills.io/) library and serving it through [skillsovermcp.com](https://skillsovermcp.com) as an MCP server.
