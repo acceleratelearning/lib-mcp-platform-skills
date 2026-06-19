@@ -1,0 +1,21 @@
+# This workflow is managed by Pulumi.  Any changes made to this file will be overwritten.
+name: Repository Maintenance
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .ali/projectInfo.json
+      - .github/workflows/repository-maintenance.yaml
+
+jobs:
+  repository-maintenance:
+    name: Repository Maintenance
+    uses: acceleratelearning/workflow-repository-maintenance/.github/workflows/shared-updates.yaml@v1
+    with:
+      github-app-id: ${{ vars.ALI_REPOSITORY_MAINTENANCE_APP_ID }}
+    secrets:
+      github-app-private-key: ${{ secrets.ALI_REPOSITORY_MAINTENANCE_PEM_FILE }}
+  
