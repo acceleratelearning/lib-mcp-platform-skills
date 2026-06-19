@@ -1,0 +1,30 @@
+{
+  "repositoryType": "github",
+  "visibility": "public",
+  "partOf": "shared",
+  "gitHubRepositoryName": "lib-mcp-platform-skills",
+  "gitHubOwner": "acceleratelearning",
+  "gitHubRepositoryUrl": "https://github.com/acceleratelearning/lib-mcp-platform-skills.git",
+  "developerTeams": [],
+  "teamLeadTeams": [
+    "cloud-engineering-leads"
+  ],
+  "adminTeams": [
+    "cloud-engineering-admins"
+  ],
+  "branches": [
+    {
+      "branchName": "main"
+    }
+  ],
+  "defaultBranchName": "main",
+  "topics": [],
+  "allowActionWorkflowAccess": false,
+  "allowDelete": false,
+  "allowMergeCommit": false,
+  "deleteBranchOnMerge": true,
+  "iamRoles": {
+    "permissionSets": [],
+    "roles": []
+  }
+}
